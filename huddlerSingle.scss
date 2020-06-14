@@ -1,0 +1,84 @@
+@import "SCSS/functions";
+@import "SCSS/variables";
+@import "SCSS/mixins/breakpoints";
+
+
+:root{
+  --violet:hsl(257, 40%, 49%);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: var(--violet);
+  background-image: url("images/bg-mobile.svg");
+
+  background-size: 576px auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  font-size: 16px;
+  color: #fff;
+}
+
+.logo{
+  height: 40px;
+}
+.img_container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  img{
+    width: 90%;
+  }
+}
+
+.information{
+  text-align: center;
+  font-family:'Poppins', sans-serif;
+  h1{
+    font-size: 1.6em;
+    line-height: 40px;
+    font-weight: 700;
+  }
+  article{
+    line-height: 25px;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+  }
+  button{
+    border: none;
+    width: 55%;
+    max-width: 271px;
+    height: 45px;
+    font-weight: 700;
+    color: var(--violet);
+    background-color: #fff;
+    border-radius: 30px;
+  }
+  margin-bottom: 60px;
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  a{
+    background-color: transparent;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+
+    margin: 0 8px;
+  }
+}
+
+//RESPONSIVE FROM MOBILE
