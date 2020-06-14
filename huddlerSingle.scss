@@ -15,10 +15,10 @@ body{
   background-color: var(--violet);
   background-image: url("images/bg-mobile.svg");
 
-  background-size: 576px auto;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: top left;
-
+  height: 100vh;
   font-size: 16px;
   color: #fff;
 }
@@ -81,4 +81,26 @@ body{
   }
 }
 
-//RESPONSIVE FROM MOBILE
+//RESPONSIVE FROM destock
+
+@include media-breakpoint-up(sm){
+  body{
+    background-image: url("images/bg-desktop.svg");
+    background-size: cover;
+  }
+}
+@include media-breakpoint-up(lg){
+  body{
+    font-size: 20px;
+  }
+
+  .img_container{
+    img{
+      height: 500px;
+    }
+  }
+  .information{
+    text-align: left;
+  }
+
+}
